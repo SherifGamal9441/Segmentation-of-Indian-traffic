@@ -6,9 +6,8 @@ This project explores semantic segmentation of Indian traffic scenes using deep 
 
 ## 📌 Project Highlights
 
-- Implementation of UNet and a custom CANet for semantic segmentation
+- Transfer Learning of UNet and a custom implementation of CANet for semantic segmentation
 - Data preprocessing, augmentation, and label remapping specific to the India Driving Dataset
-- Handling class imbalance to improve model performance
 - Evaluation based on Intersection over Union (IoU) metric
 - End-to-end pipeline including training, evaluation, and inference
 
@@ -30,9 +29,9 @@ This project uses the India Driving Dataset (IDD) from [idd.insaan.iiit.ac.in](h
 ## 📈 Evaluation & Results
 
 ### Observations:
-- UNet achieved an IoU score of **49.99%**, outperforming CANet, which achieved **34%**.
+- UNet achieved an IoU score of **49.99%**, outperforming CANet, which achieved **33.56%**.
 - CANet's lower performance is influenced by class imbalance within the dataset.
-- Future improvements for CANet include applying class-weighted loss functions, focal loss, or data sampling strategies to mitigate class imbalance.
+- Future improvements for CANet include applying class-weighted loss functions, focal + dice loss, or data sampling strategies to mitigate class imbalance.
 - Additional experiments with architecture depth, attention mechanisms, and data augmentation could enhance results.
 
 ### Conclusion:
@@ -44,7 +43,8 @@ This project uses the India Driving Dataset (IDD) from [idd.insaan.iiit.ac.in](h
 
 ## 🔍 Sample Output
 
-![Sample Segmentation Output](UNet_output.png)
+![UNet Segmentation Output](UNet_output.png)
+![CANet Segmentation Output](UNet_output.png)
 
 ---
 
@@ -65,4 +65,8 @@ This project uses the India Driving Dataset (IDD) from [idd.insaan.iiit.ac.in](h
     *   keras==3.9.2  
     *   pandas==1.4.2  
     *   numpy==1.26.4  
-    *   matplotlib==3.10.0  
+    *   matplotlib==3.10.0
+    *   pillow==11.2.1
+    *   albumentations==2.0.6
+    *   imgaug=0.4.0
+    *   segmentation-models==1.0.1
