@@ -45,7 +45,7 @@ This project uses the India Driving Dataset (IDD) from [idd.insaan.iiit.ac.in](h
 these results on the same images
 ### UNet Segmentation Output
 ![UNet Segmentation Output](UNet_output.png)
-### CANet Segmentation Output]
+### CANet Segmentation Output
 ![CANet Segmentation Output](UNet_output.png)
 
 ---
