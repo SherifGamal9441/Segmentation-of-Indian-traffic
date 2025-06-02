@@ -52,12 +52,6 @@ these results on the same images
 
 ## 🛠️ Development Environment
 
-### 💻 Hardware
-
-*   **GPU:** NVIDIA RTX 3060 (12GB VRAM)  
-*   **CPU:** AMD Ryzen 5 3600 (6 cores, 12 threads)  
-*   **RAM:** 32 GB DDR4  
-
 ### 🧪 Virtual Environment
 
 *   **Key Packages:**  
